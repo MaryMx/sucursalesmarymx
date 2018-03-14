@@ -1,9 +1,5 @@
 #!/usr/bin/env python
 
- speech2 = "prueba exitosa" 
-   print("Response:")
-    print(speech2)
-
 import urllib
 import json
 import os
@@ -64,4 +60,4 @@ if __name__ == '__main__':
     print ("Starting app on port %d" % port)
     
 
-    app.run(debug=True, port=port, host='0.0.0.0')
+    app.run(debug=FALSE, port=port, host='0.0.0.0')
