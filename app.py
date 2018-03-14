@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 
+ speech2 = "prueba exitosa" 
+   print("Response:")
+    print(speech2)
+
 import urllib
 import json
 import os
@@ -52,10 +56,6 @@ def makeWebhookResult(req):
         # "contextOut": [],
         "source": "apiai-onlinestore-shipping"
     }
-
- speech2 = "prueba exitosa" 
-   print("Response:")
-    print(speech2)
 
 
 if __name__ == '__main__':
