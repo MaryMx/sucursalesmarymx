@@ -28,9 +28,7 @@ def webhook():
     r.headers['Content-Type'] = 'application/json'
     return r
 
- speech2 = "prueba exitosa"
-   print("Response:")
-    print(speech2)
+
 
 
 def makeWebhookResult(req):
@@ -54,6 +52,10 @@ def makeWebhookResult(req):
         # "contextOut": [],
         "source": "apiai-onlinestore-shipping"
     }
+
+ speech2 = "prueba exitosa"
+   print("Response:")
+    print(speech2)
 
 
 if __name__ == '__main__':
