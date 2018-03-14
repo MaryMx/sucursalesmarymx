@@ -8,6 +8,10 @@ from flask import Flask
 from flask import request
 from flask import make_response
 
+ speech2 = "hola"
+   print("Response:")
+    print(speech2)
+
 # Flask app should start in global layout
 app = Flask(__name__)
 
