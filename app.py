@@ -8,9 +8,6 @@ from flask import Flask
 from flask import request
 from flask import make_response
 
- speech2 = "hola"
-   print("Response:")
-    print(speech2)
 
 # Flask app should start in global layout
 app = Flask(__name__)
@@ -31,6 +28,11 @@ def webhook():
     r.headers['Content-Type'] = 'application/json'
     return r
 
+ speech2 = "prueba exitosa"
+   print("Response:")
+    print(speech2)
+
+
 def makeWebhookResult(req):
     if req.get("result").get("action") != "enviar-info-tiendas":
         return {}
@@ -50,7 +52,7 @@ def makeWebhookResult(req):
         "displayText": speech,
         #"data": {},
         # "contextOut": [],
-        #"source": "apiai-onlinestore-shipping"
+        "source": "apiai-onlinestore-shipping"
     }
 
 
