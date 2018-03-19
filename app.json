@@ -1,7 +1,7 @@
 {
   "name": "API.AI Shipping Costs Webhook",
   "description": "API.AI Shipping Costs Webhook Sapmple",
-  "repository": "https://github.com/svet4/sucursalesmarymx",
+  "repository": "https://github.com/marymx/sucursalesmarymx",
   "logo": "http://xvir.github.io/img/apiai.png",
   "keywords": ["api.ai", "natural language"]
 }
