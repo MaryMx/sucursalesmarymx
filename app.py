@@ -32,11 +32,11 @@ def webhook():
 
 
 def makeWebhookResult(req):
-    if req.get("result").get("action") != "enviar-info-tiendas":
+    if req.get("result").get("action") != "tienda.info":
         return {}
     result = req.get("result")
     parameters = result.get("parameters")
-    zone = parameters.get("tiendainfo")
+    zone = parameters.get("tiendas-info")
 
     cost = {'Europe':100, 'North America':200, 'South America':300, 'Asia':400, 'Africa':500}
 
@@ -57,7 +57,7 @@ def makeWebhookResult(req):
 if __name__ == '__main__':
     port = int(os.getenv('PORT', 5000))
 
-    print ("Starting app on port %d" % port)
+    print "Starting app on port %d" % port
     
 
-    app.run(debug=FALSE, port=port, host='0.0.0.0')
+    app.run(debug=true, port=port, host='0.0.0.0')
