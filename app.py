@@ -58,7 +58,7 @@ speech = zone + "loveit"
         "speech": speech,
         "displayText": speech,
         #"data": {},
-         "contextOut": [],
+         #"contextOut": [],
         "source": "apiai-onlinestore-shipping"
     }
 
