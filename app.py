@@ -41,7 +41,16 @@ def webhook():
 
 def makeWebhookResult(req):
     if req.get("result").get("action") != "Tienda.info":
-        return {}
+        return {
+ speech = "none"
+            
+
+
+    print("Response:")
+    print(speech)
+
+
+}
     result = req.get("result")
     parameters = result.get("parameters")
     zone = parameters.get("tiendas-info")
