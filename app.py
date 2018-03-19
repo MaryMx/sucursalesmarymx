@@ -40,7 +40,7 @@ def webhook():
 
 
 def makeWebhookResult(req):
-    if req.get("result").get("action") != "Tienda.info":
+    if req.get("result").get("action") == "Tienda.info":
         return {}
     result = req.get("result")
     parameters = result.get("parameters")
